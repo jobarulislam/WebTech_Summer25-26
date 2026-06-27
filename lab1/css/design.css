@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.container{
+    margin: 1rem;
+    display: grid;
+    align-items: center;
+}
+.name_email, .password_age, .date_phone{
+    display: flex;
+    align-items: center;
+}
+.studentInfo{
+    height: 16rem;
+    width: 40rem;
+}
+p{ 
+    margin: 0;
+    padding: 0;
+    height: 2rem;
+    font-size: .9rem;
+    font-weight: 600;
+}
+input{
+    margin: 0;
+    padding: 0;
+    height: 2rem;
+    width: 17rem;
+}
+::placeholder{
+    padding: 1rem;
+}
+.name, .password, .experimentDate{
+    height: 4rem;
+    margin-right: 2rem;
+    margin-bottom: .8rem;
+    margin-left: 1rem;
+}
+.email, .age, .phone{
+     height: 4rem;
+    margin-right: 2rem;
+    margin-bottom: .8rem;
+    
+}
+.button{
+    justify-content: center;
+}

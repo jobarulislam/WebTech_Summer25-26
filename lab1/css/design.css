@@ -12,10 +12,7 @@
     display: flex;
     align-items: center;
 }
-.studentInfo{
-    height: 16rem;
-    width: 40rem;
-}
+
 p{ 
     margin: 0;
     padding: 0;
@@ -46,4 +43,38 @@ input{
 }
 .button{
     justify-content: center;
+}
+legend{
+    border: 0;
+    padding: .7rem;
+    background-color: rgba(106, 106, 224, 0.911);
+    border-radius: .4rem;
+    margin-left: 1rem;
+}
+fieldset{
+    border: 0;
+    border-radius: .4rem;
+    height: 20rem;
+    width: 20rem;
+    background-color: rgba(97, 97, 138, 0.61);
+}
+.name_email{
+    margin-top: 1rem;
+}
+.button{
+    margin-top: 1rem;
+    margin-left: 15rem;
+    height: 2rem;
+}
+.submit, .clear{
+    border: 0;
+    height: 2rem;
+    padding: .3rem;
+    border-radius: .4rem;
+    background-color: rgba(0, 0, 255, 0.397);
+    font-weight: 600;
+
+}
+.clear{
+    background-color: rgba(240, 62, 62, 0.651);
 }

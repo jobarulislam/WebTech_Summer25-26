@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <title>Patient Registration</title>
+</head>
+<body>
+    <div id="container" class="container">
+        <fieldset>
+            <legend>patient Information</legend>
+            <div class="name">
+                <label id="name">Patient Name :</label>
+                <input id="name_input" type="text" placeholder="Enter patient Name">
+            </div>
+
+            <div class="age">
+                <label id="age">Patient Age :</label>
+                <input id="age_input" type="number" placeholder="Enter Patient Age">
+            </div>
+
+            <div class="email">
+                <label id="email">Patient Email :</label>
+                <input id="email_input" type="email" placeholder="Enter patient email">
+            </div>
+
+            <div class="gender">
+                <label id="gender">Patient gender :</label>
+                <input id="gender_male" type="radio">
+                <label for="gender_male">Male</label>
+                <input type="radio" id="gender_female">
+                <label for="gender_female">Female</label>
+            </div>
+
+            <div class="doctortype">
+                <label id="doctortype">Select Doctor Dept :</label>
+                <input id="doctortype_input_medicine" type="radio">
+                <label for="doctortype_input_medicine">Madicine</label>
+                <input type="radio" id="doctortype_input_cardiac">
+                <label for="doctortype_input_cardiac">Cardiac</label>
+                <input type="radio" id="doctortype_input_neurology">
+                <label for="doctortype_input_neurology">Neurology</label>
+            </div>
+
+            <div class="prescription">
+                <label id="prescription">Patient Prescription :</label>
+                <input type="file" id="prescription_input" >
+            </div>
+
+            
+        </fieldset>
+    </div>
+</body>
+</html>

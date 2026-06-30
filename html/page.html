@@ -2,16 +2,22 @@
 <html lang="en-US">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="../html/design/style.css">
+    <script src="../JS/script.js"></script>
     <title>Signup</title>
 </head>
 <body>
-    <div class="container">
-
-    
-
+    <div class ="header"> 
     <h1>Patient Registration Form</h1>
+    </div>
+    <div class="topnav">
+        <a href="https://aiub.edu/" target="_blank"> AIUB Website </a>
+        <a href="https://portal.aiub.edu/" target="_blank"> AIUB Portal </a>
+    </div>
 
-    <form>
+        
+    <div class="container">
+    <form action="_blank">
         <fieldset>
             <legend> Patient Personal Information </legend>
         <table>
@@ -38,12 +44,24 @@
             </tr>
 
             <tr>
-                <td>Patient Gender:</td>
+                <td><label for="Gender">Patient Gender:</label></td>
                 <td>
                     <input type="radio" id="PatientMale" name="Gender" value="Male">
                     <label for="PatientMale">Male</label>
                     <input type="radio" id="PatientFemale" name="Gender" value="Female">
                     <label for="PatientFemale">Female</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label>Selected Doctor Dept:</label></td>
+                <td>
+                    <input type="checkbox" id="Medicine" name="DeptDoctor" value="Medicine">
+                    <label for="Medicine">Medicine</label>
+                    <input type="checkbox" id="Cardiac" name="DeptDoctor" value="Cardiac">
+                    <label for="Cardiac">Cardiac</label>
+                    <input type="checkbox" id="Neurology" name="DeptDoctor" value="Neurology">
+                    <label for="Neurology">Neurology</label>
                 </td>
             </tr>
 
@@ -69,40 +87,17 @@
             </tr>
 
             <tr>
-                <td> <label for= "patientcitizen"> Citizenship:  </label></td>
+                <td><label for="patientcitizen">Citizenship:</label></td>
                 <td>
-                    <select id="country"> 
-                    <option id ="Default" value="Default"> -------- Select Country ----- </option>
-                    <option id ="BD" value="Bangladesh"> Bangladesh </option>
-                    <option id ="UK" value="UnitedKingdom"> United Kingdom </option>
-                    <option id ="Brazil" value="Brazil"> Brazil </option>
+                    <select id="country" name="country">
+                        <option value="Default">-------- Select Country -----</option>
+                        <option value="Bangladesh">Bangladesh</option>
+                        <option value="UnitedKingdom">United Kingdom</option>
+                        <option value="Brazil">Brazil</option>
                     </select>
                 </td>
             </tr>
-            <tr>
-                <td> <label for="DeptDoctor"> Selected Doctor Dept: </label></td>
-                <td>
-                    <input type ="checkbox" id="Medicine" name="DeptDoctor">
-                    <label for ="Medicine"> Medicine </label>
-                    <br>
-                    <input type ="checkbox" id="Cardiac" name="DeptDoctor">
-                    <label for ="Cardiac"> Cardiac </label>
-                    <br>
-                    <input type ="checkbox" id="Neorology" name="DeptDoctor">
-                    <label for ="Neorology"> Neorology </label>
-
-                </td>
-            </tr>
-
-
-
-        </table>
-        </fieldset>
-
-        <fieldset>
-            <legend> User Profile </legend>
-            <table>
-                <tr> 
+            <tr> 
                 <td> <label for="username"> User Name: </label> </td>
                 <td> <input type="text" id="username" name="username"> </td>
                 </tr>
@@ -113,20 +108,30 @@
 
                 <tr>
                     <td> <label for="Conpassword">Confirm  Password: </label> </td>
-                    <td> <input type="Conpassword" id="Conpassword" name="Conpassword"> </td>
+                    <td> <input type="password" id="Conpassword" name="Conpassword"> </td>
                 </tr>
-            </table>
-        </fieldset>
-       
-        <input type="checkbox" id="Condition" name="Condition">
-        <label for="Condition"> <font color= "red"> I Agree Terms and Condition * </font></label>
-        <br><br>
-        <input type="submit" id="submit" name="submit" value="Signup">
+
+        <tr>
+            <td><input type="checkbox" id="Condition" name="Condition">
+        <label for="Condition"> <font color= "red"> I Agree Terms and Condition * </font></label></td>
+        </tr>
+        
+       <tr>
+        <td> 
+        <input type="submit" id="submit" name="submit">
+        <br>
+        <br>
         <input type="reset" id="reset" name="reset" value="Reset">
+
+        </td>
+       </tr>
         
-            
-        
+        </table>
+        </fieldset> 
     </form>
+</div>
+<div class="footer"> 
+    <label for="footer"> Created 2026 </label>
 </div>
 </body>
 </html>

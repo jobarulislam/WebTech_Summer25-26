@@ -7,26 +7,30 @@
     <title>Patient Registration</title>
 </head>
 <body>
+<div class="header">
+
+</div>
+
     <div id="container" class="container">
         <fieldset>
             <legend>patient Information</legend>
             <div class="name">
-                <label id="name">Patient Name :</label>
+                <label for="name">Patient Name :</label>
                 <input id="name_input" type="text" placeholder="Enter patient Name">
             </div>
 
             <div class="age">
-                <label id="age">Patient Age :</label>
+                <label for="age">Patient Age :</label>
                 <input id="age_input" type="number" placeholder="Enter Patient Age">
             </div>
 
             <div class="email">
-                <label id="email">Patient Email :</label>
+                <label for="email">Patient Email :</label>
                 <input id="email_input" type="email" placeholder="Enter patient email">
             </div>
 
             <div class="gender">
-                <label id="gender">Patient gender :</label>
+                <label for="gender">Patient gender :</label>
                 <input id="gender_male" type="radio">
                 <label for="gender_male">Male</label>
                 <input type="radio" id="gender_female">
@@ -34,7 +38,7 @@
             </div>
 
             <div class="doctortype">
-                <label id="doctortype">Select Doctor Dept :</label>
+                <label for="doctortype">Select Doctor Dept :</label>
                 <input id="doctortype_input_medicine" type="radio">
                 <label for="doctortype_input_medicine">Madicine</label>
                 <input type="radio" id="doctortype_input_cardiac">
@@ -44,12 +48,54 @@
             </div>
 
             <div class="prescription">
-                <label id="prescription">Patient Prescription :</label>
+                <label for="prescription">Patient Prescription :</label>
                 <input type="file" id="prescription_input" >
             </div>
 
-            
+            <div class="patient_dob">
+                <label for="patient_dob">Patient DOB</label>
+                <input id="patient_dob_input" type="date">
+            </div>
+
+            <div class="address">
+                <label for="address">Patient Address :</label>
+                <input id="address_input" type="text">
+            </div>
+
+            <div class="citizenship">
+                <label for="citizenship">Citizenship :</label>
+                <select name="country" id="country">
+                    <option value="default">----Select a country----</option>
+                    <option value="bangladesh">Bangladesh</option>
+                    <option value="uk">UnitedKingdom</option>
+                </select>
+            </div>
+
+            <div class="user_name">
+                <label for="user_name">User Name :</label>
+                <input type="text">
+            </div>
+
+            <div class="password">
+                <label for="password">Password</label>
+                <input id="password_input" type="password">
+            </div>
+            <div class="confirm_password">
+                <label for="confirm_password">Confirm Password</label>
+                <input id="confirm_password_input" type="password">
+            </div>
+            <div class="condition">
+                <input type="checkbox" id="condition">
+                <label for="condition">I agree terms and conditions</label>
+            </div>
+            <div class="button">
+                <button id="submit">SUBMIT</button>
+                <button id="reset">RESET</button>
+            </div>
         </fieldset>
     </div>
+<div class="footer">
+    
+</div>
 </body>
 </html>

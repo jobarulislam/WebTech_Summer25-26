@@ -5,6 +5,8 @@ let text = "<ul>";
 for(let i = 0; i < flen; i++){
     text +="<li>" + fruits[i] + "</li>" ;
 }
+
+text += "</ul>";
 let p = document.getElementById("html1").innerHTML = text;
 console.log(fruits);
 console.log(flen);
@@ -18,4 +20,8 @@ function reload(){
     }
     console.log("reload the html1");
 }
+let x = 15*4;
+debugger;
+nm = document.getElementById("html2");
+nm.innerHTML= x;
 
